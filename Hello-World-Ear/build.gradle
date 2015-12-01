@@ -1,0 +1,15 @@
+apply plugin: 'ear'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	deploy project(path: ':Hello-World-Web', configuration: 'archives')
+}
+
+ear {
+	deploymentDescriptor {
+		webModule('Hello-World-Web.war', 'hello-world')
+	}
+}
