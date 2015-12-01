@@ -1,0 +1,3 @@
+general:
+  artifacts:
+    - "Hello-World-Ear/build/libs" # relative to the build directory
